@@ -1,118 +1,115 @@
 ## **Machine Learning e Visão Computacional**
 
-### [IBGE - Despesa Coletiva](https://basedosdados.org/dataset/a1b6d2b6-4aa6-47e7-a517-8a21b28b7254?table=6f548e6a-5649-4ee3-bb0d-a46ca8efd4b6)
+### [Base dos Dados - Ocorrencias Registradas](https://basedosdados.org/dataset/dbd717cb-7da8-4efd-9162-951a71694541?table=74c0ea82-6d5e-4fee-aa54-a013e9fe9ecc)
 
 ## Documentação Base de Dados
 
-### Campo: sigla_uf
+### Campo: ano
+- **Tipo**: float64
+- **Descricao**: Ano do registro, abrangendo o período de 2002 a 2021.
+
+### Campo: mes
+- **Tipo**: float64
+- **Descricao**: Mês do registro, abrangendo o período de 2002 a 2021.
+
+### Campo: id_municipio
+- **Tipo**: float64
+- **Descricao**: Identificador do município, conforme IBGE (7 dígitos), abrangendo o período de 2002 a 2021.
+
+### Campo: regiao_ssp
 - **Tipo**: string
-- **Descricao**: Sigla da Unidade da Federação.
+- **Descricao**: Região definida pela Secretaria de Segurança Pública (SSP), abrangendo o período de 2002 a 2021.
 
-### Campo: situacao
-- **Tipo**: int64
-- **Descricao**: Situação do Domicílio.
-
-### Campo: id_estrato
-- **Tipo**: int64
-- **Descricao**: Identificador dos estratos do plano amostral da pesquisa.
-
-### Campo: id_unidade_primaria_amostragem
-- **Tipo**: int64
-- **Descricao**: Código da Unidade Primária de Amostragem.
-
-### Campo: id_domicilio
-- **Tipo**: int64
-- **Descricao**: Identificador do Domicílio.
-
-### Campo: id_unidade_consumo
-- **Tipo**: int64
-- **Descricao**: Identificador da Unidade de Consumo.
-
-### Campo: id_quadro
-- **Tipo**: int64
-- **Descricao**: Número do quadro que o item de despesa/aquisição foi registrado.
-
-### Campo: id_codigo_5_bd
-- **Tipo**: int64
-- **Descricao**: Código de 5 dígitos do item.
-
-### Campo: id_codigo_7_bd
-- **Tipo**: int64
-- **Descricao**: Código de 7 dígitos do item.
-
-### Campo: V9001
-- **Tipo**: int64
-- **Descricao**: Código do tipo de despesa/aquisição.
-
-### Campo: V9002
-- **Tipo**: int64
-- **Descricao**: Forma de aquisição.
-
-### Campo: V9004
+### Campo:  homicidio_doloso
 - **Tipo**: float64
-- **Descricao**: Código do local de aquisição.
+- **Descricao**: Número total de homicídios dolosos, incluindo homicídios dolosos por acidente de trânsito, abrangendo o período de 2002 a 2021.
 
-### Campo: V9005
+### Campo: numero_de_vitimas_em_homicidio_doloso
 - **Tipo**: float64
-- **Descricao**: Quantidade final consumida em kwh, apenas para o item energia elétrica.
+- **Descricao**: Número de vítimas em homicídios dolosos, incluindo vítimas de homicídios dolosos por acidente de trânsito, abrangendo o período de 2002 a 2021.
 
-### Campo: V9010
+### Campo: homicidio_doloso_por_acidente_de_transito
 - **Tipo**: float64
-- **Descricao**: Último mês que a respectiva despesa/aquisição foi realizada pela Unidade de Consumo, no período de referência.
+- **Descricao**: Número de homicídios dolosos causados por acidentes de trânsito, abrangendo o período de 2002 a 2021.
 
-### Campo: V9011
+### Campo: numero_de_vitimas_em_homicidio_doloso_por_acidente_de_transito
 - **Tipo**: float64
-- **Descricao**: Número de meses que a despesa/aquisição foi realizada pela Unidade de Consumo, no período de referência.
+- **Descricao**: Número de vítimas de homicídios dolosos causados por acidentes de trânsito, abrangendo o período de 2002 a 2021.
 
-### Campo: V9012
+### Campo: homicidio_culposo_por_acidente_de_transito
 - **Tipo**: float64
-- **Descricao**: Estado do produto adquirido pela Unidade de Consumo, no período de referência.
+- **Descricao**: Número de homicídios culposos causados por acidentes de trânsito, abrangendo o período de 2002 a 2021.
 
-### Campo: V1905
+### Campo: homicidio_culposo_outros
 - **Tipo**: float64
-- **Descricao**: Tipo de serviço doméstico contratado pela Unidade de Consumo, no período de referência.
+- **Descricao**: Número de homicídios culposos de outras naturezas, abrangendo o período de 2002 a 2021.
 
-### Campo: indicador_imputacao_valor
-- **Tipo**: int64
-- **Descricao**: Indica se o valor da despesa/aquisição foi imputado.
-
-### Campo: indicador_imputacao_qtd
+### Campo: tentativa_de_homicidio
 - **Tipo**: float64
-- **Descricao**: Indica se a quantidade consumida em kwh foi imputada.
+- **Descricao**: Número de tentativas de homicídio, abrangendo o período de 2002 a 2021.
 
-### Campo: fator_anualizacao
-- **Tipo**: int64
-- **Descricao**: Número utilizado para anualizar as despesas/aquisições, em função do período de referência.
-
-### Campo: deflator
+### Campo:  lesao_corporal_seguida_de_morte
 - **Tipo**: float64
-- **Descricao**: Fator de multiplicação para o tratamento do efeito inflacionário (Data de Referência - 5 de janeiro de 2018) sobre os valores monetários e não monetários.
+- **Descricao**: Número de casos de lesão corporal seguida de morte, abrangendo o período de 2002 a 2021.
 
-### Campo: V8000
+### Campo: lesao_corporal_dolosa
 - **Tipo**: float64
-- **Descricao**: Valor da despesa/aquisição realizada pela Unidade de Consumo no período de referência.
+- **Descricao**: Número de lesões corporais dolosas, abrangendo o período de 2002 a 2021.
 
-### Campo: V1904
+### Campo: lesao_corporal_culposa_por_acidente_de_transito
 - **Tipo**: float64
-- **Descricao**: Valor da despesa com 'INSS e Outras Contribuições Recolhida' realizada pela Unidade de Consumo, no período de referência.
+- **Descricao**: Número de lesões corporais culposas causadas por acidentes de trânsito, abrangendo o período de 2002 a 2021.
 
-### Campo: V8000_deflacionado
+### Campo: lesao_corporal_culposa_outras
 - **Tipo**: float64
-- **Descricao**: Valor da despesa/aquisição deflacionado (Data de Referência - 5 de janeiro de 2018).
+- **Descricao**: Número de lesões corporais culposas de outras naturezas, abrangendo o período de 2002 a 2021.
 
-### Campo: V1904_deflacionado
+### Campo: latrocinio
 - **Tipo**: float64
-- **Descricao**: Valor da despesa com 'INSS e Outras Contribuições Recolhidas' deflacionado (Data de Referência - 5 de janeiro de 2018).
+- **Descricao**: Número de casos de latrocínio, abrangendo o período de 2002 a 2021.
 
-### Campo: renda_total
+### Campo: numero_de_vitimas_em_latrocinio
 - **Tipo**: float64
-- **Descricao**: Valor do rendimento bruto total mensal da Unidade de Consumo.
+- **Descricao**: Número de vítimas de latrocínio, abrangendo o período de 2002 a 2021.
 
-### Campo: peso
+### Campo: total_de_estupro
 - **Tipo**: float64
-- **Descricao**: Fator de expansão atribuído ao domicílio pertencente a uma Unidade Primária de Amostragem.
+- **Descricao**: Soma dos casos de estupro e estupro de vulnerável, abrangendo o período de 2002 a 2021.
 
-### Campo: peso_final
+### Campo: estupro
 - **Tipo**: float64
-- **Descricao**: Fator de expansão (peso) ajustado às estimativas populacionais de 15 de janeiro de 2018, segundo cada UF e pós estratos definidos.
+- **Descricao**: Número de casos de estupro, abrangendo o período de 2002 a 2021.
+
+### Campo: estupro_de_vulneravel
+- **Tipo**: float64
+- **Descricao**: Número de casos de estupro de vulnerável, abrangendo o período de 2002 a 2021.
+
+### Campo:  total_de_roubo_outros
+- **Tipo**: float64
+- **Descricao**: Soma dos casos de roubo - outros, roubo de carga e roubo a banco, abrangendo o período de 2002 a 2021.
+
+### Campo: roubo_outros
+- **Tipo**: float64
+- **Descricao**: Número de casos de outros tipos de roubo, abrangendo o período de 2002 a 2021.
+
+### Campo: roubo_de_veiculo
+- **Tipo**: float64
+- **Descricao**: Número de casos de roubo de veículo, abrangendo o período de 2002 a 2021.
+
+### Campo: roubo_a_banco
+- **Tipo**: float64
+- **Descricao**: Número de casos de roubo a banco, abrangendo o período de 2002 a 2021.
+
+### Campo: roubo_de_carga
+- **Tipo**: float64
+- **Descricao**: Número de casos de roubo de carga, abrangendo o período de 2002 a 2021.
+
+### Campo: furto_outros
+- **Tipo**: float64
+- **Descricao**: Número de casos de outros tipos de furto, abrangendo o período de 2002 a 2021.
+
+### Campo: furto_de_veiculo
+- **Tipo**: float64
+- **Descricao**: Número de casos de furto de veículo, abrangendo o período de 2002 a 2021.
+
 
